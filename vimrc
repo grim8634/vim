@@ -29,3 +29,4 @@ au BufNewFile,BufRead *.t set filetype=perl
 
 set guioptions-=T
 set guioptions-=r
+set mouse=a
