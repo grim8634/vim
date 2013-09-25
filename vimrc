@@ -21,7 +21,7 @@ set hlsearch
 colorscheme desert
 hi Constant   cterm=NONE ctermfg=DarkGreen   gui=NONE guifg=green3
 
-au BufWinEnter * let w:m1=matchadd('ErrorMsg', '\%>80v.\+', -1)
+au FileType perl set colorcolumn=81
 au BufWinEnter * let w:m2=matchadd('DiffDelete', '\s\+$', -1)
 au BufWinEnter * let w:m3=matchadd('ErrorMsg', 'HACK')
 "au BufWinEnter * let w:m4=matchadd('Search', '\%<81v.\%>77v', -1)
