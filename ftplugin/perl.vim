@@ -86,3 +86,10 @@ let b:match_skip = 's:comment\|string\|perlQQ\|perlShellCommand\|perlHereDoc\|pe
 " Restore the saved compatibility options.
 let &cpo = s:save_cpo
 unlet s:save_cpo
+
+setlocal colorcolumn=81
+setlocal foldenable
+setlocal foldmethod=syntax
+syn region POD start=/^=head[123]/ end=/^=cut/ fold
+
+hi Constant   cterm=NONE ctermfg=DarkGreen   gui=NONE guifg=green3

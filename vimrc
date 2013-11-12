@@ -10,6 +10,7 @@ noremap <silent> <F8> :TlistToggle<CR>
 
 syntax on
 set number
+filetype plugin on
 
 "makes vim do proper indenting
 set smartindent autoindent
@@ -17,15 +18,10 @@ set smartindent autoindent
 "makes vim highlight search terms
 set hlsearch
 
-"set t_Co=256
 colorscheme desert
-hi Constant   cterm=NONE ctermfg=DarkGreen   gui=NONE guifg=green3
 
-au FileType perl set colorcolumn=81
-au BufWinEnter * let w:m2=matchadd('DiffDelete', '\s\+$', -1)
-au BufWinEnter * let w:m3=matchadd('ErrorMsg', 'HACK')
-"au BufWinEnter * let w:m4=matchadd('Search', '\%<81v.\%>77v', -1)
-au BufNewFile,BufRead *.t set filetype=perl
+let w:m2=matchadd('DiffDelete', '\s\+$', -1)
+let w:m3=matchadd('ErrorMsg', 'HACK')
 
 set guioptions-=T
 set guioptions-=r
