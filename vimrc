@@ -7,6 +7,7 @@ set ss=4 ts=4 sts=4 sw=4 expandtab
 "<F2>close
 map <F2> :bd<Enter>
 noremap <silent> <F8> :TlistToggle<CR>
+set pastetoggle=<F3>
 
 syntax on
 set number
@@ -20,8 +21,8 @@ set hlsearch
 
 colorscheme desert
 
-let w:m2=matchadd('DiffDelete', '\s\+$', -1)
-let w:m3=matchadd('ErrorMsg', 'HACK')
+au BufWinEnter * let w:m2=matchadd('DiffDelete', '\s\+$', -1)
+au BufWinEnter * let w:m3=matchadd('ErrorMsg', 'HACK')
 
 set guioptions-=T
 set guioptions-=r
