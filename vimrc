@@ -27,3 +27,6 @@ au BufWinEnter * let w:m3=matchadd('ErrorMsg', 'HACK')
 set guioptions-=T
 set guioptions-=r
 set title
+
+set spell
+set spell spelllang=en_gb
