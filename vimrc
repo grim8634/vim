@@ -30,3 +30,4 @@ set title
 
 set spell
 set spell spelllang=en_gb
+hi SpellLocal cterm=NONE ctermbg=yellow  gui=NONE guibg=yellow
