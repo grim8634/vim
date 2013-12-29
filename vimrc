@@ -28,6 +28,5 @@ set guioptions-=T
 set guioptions-=r
 set title
 
-set spell
-set spell spelllang=en_gb
-hi SpellLocal cterm=NONE ctermbg=yellow  gui=NONE guibg=yellow
+:map <F4> :setlocal spell! spelllang=en_gb<CR>
+hi SpellLocal cterm=NONE ctermbg=yellow
