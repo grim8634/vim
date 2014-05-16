@@ -30,3 +30,6 @@ set title
 
 :map <F4> :setlocal spell! spelllang=en_gb<CR>
 hi SpellLocal cterm=NONE ctermbg=yellow
+
+filetype indent on
+set smartindent
