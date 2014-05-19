@@ -33,3 +33,4 @@ hi SpellLocal cterm=NONE ctermbg=yellow
 
 filetype indent on
 set smartindent
+set updatetime=500
