@@ -34,3 +34,4 @@ hi SpellLocal cterm=NONE ctermbg=yellow
 filetype indent on
 set smartindent
 set updatetime=500
+let g:hlvarhl="ctermbg=blue ctermfg=yellow guifg=#ffff00 guibg=#0000ff gui=bold"
