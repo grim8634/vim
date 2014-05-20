@@ -1,5 +1,4 @@
-"disable vi compatibiliy mode
-set nocompatible
+set nocompatible    "disable vi mode, has to come first
 
 "enable many things like 4 space tabs etc
 set ss=4 ts=4 sts=4 sw=4 expandtab
@@ -10,28 +9,37 @@ set pastetoggle=<F3>
 nmap g/ :vimgrep /<C-R>//j %<CR>\|:cw<CR>:nohl<CR>
 
 syntax on
-set number
 filetype plugin on
-
-"makes vim do proper indenting
-set smartindent autoindent
-
-"makes vim highlight search terms
-set hlsearch
 
 colorscheme desert
 
 au BufWinEnter * let w:m2=matchadd('DiffDelete', '\s\+$', -1)
 au BufWinEnter * let w:m3=matchadd('ErrorMsg', 'HACK')
 
-set guioptions-=T
-set guioptions-=r
-set title
-
 :map <F4> :setlocal spell! spelllang=en_gb<CR>
 hi SpellLocal cterm=NONE ctermbg=yellow
 
 filetype indent on
-set smartindent
-set updatetime=500
+
+set guioptions-=T   "no toolbar
+set guioptions-=r   "no scroll bar
+set title           "show file in term title
+
+set smartindent     "better indenting
+set autoindent
+set copyindent
+
+set showmatch       "parenthisis
+
+set ignorecase      "case insensitve search
+set smartcase       "unless there's uppercase
+set hlsearch        "highlight search
+set incsearch       "highlight as you type
+
+set number          "line numbers
+
+set history=1000         " remember more commands and search history
+set undolevels=1000      " use many muchos levels of undo
+
+set updatetime=250  "this is for the vl-hl plugin
 let g:hlvarhl="ctermbg=blue ctermfg=yellow guifg=#ffff00 guibg=#0000ff gui=bold"

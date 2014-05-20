@@ -25,9 +25,9 @@
 " SOFTWARE.
 
 function! s:hlvar()
-    if (exists("s:current_match"))
-        call matchdelete(s:current_match)
-        unlet s:current_match
+    if (exists("w:current_match"))
+        call matchdelete(w:current_match)
+        unlet w:current_match
     endif
 
     let s:temp         = getpos('.')
@@ -50,12 +50,6 @@ function! s:hlvar()
         return
     endif
 
-    if (exists("g:hlvarhl"))
-        exe "highlight VarHl  " . g:hlvarhl
-    else
-        highlight VarHl  ctermbg=black ctermfg=red guifg=#ff0000 guibg=#000000 ctermfg=LightRed gui=bold
-    endif
-
     let s:str = strpart(s:temp[0], s:sigil_col - 1, s:varend - s:sigil_col)
     let s:prefix = ''
     if (s:str == '$' || s:str == '&' || s:str == '*')
@@ -75,15 +69,26 @@ function! s:hlvar()
         let s:match = s:match . '>\@<='
     endif
     let s:match = s:match . s:str . '\n\{-\}\(\([^a-zA-Z0-9_\x7f-\xff]\)\|$\)\@='
-    let s:current_match = matchadd('VarHl', s:match)
+    let w:current_match = matchadd('VarHl', s:match)
 endfunction
 
 if (!exists("g:hlvarnoauto") || g:hlvarnoauto == 1)
     augroup HighlightVar
         autocmd!
-        au FileType perl :au CursorMoved  * call <sid>hlvar()
-        au FileType perl :au CursorMovedi * call <sid>hlvar()
+        au FileType perl :au CursorHold  * call <sid>hlvar()
+        au FileType perl :au CursorHoldi * call <sid>hlvar()
+        au CursorHold  *.pl call <sid>hlvar()
+        au CursorHoldi *.pl call <sid>hlvar()
+        au CursorHold  *.pm call <sid>hlvar()
+        au CursorHoldi *.pm call <sid>hlvar()
+        au CursorHold  *.t  call <sid>hlvar()
+        au CursorHoldi *.t  call <sid>hlvar()
     augroup END
+    if (exists("g:hlvarhl"))
+        exe "highlight VarHl  " . g:hlvarhl
+    else
+        highlight VarHl ctermbg=black guifg=#ff0000 guibg=#000000 ctermfg=LightRed gui=bold
+    endif
 endif
 
 command! HlVar :call <sid>hlvar()
