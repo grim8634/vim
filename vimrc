@@ -43,3 +43,7 @@ set undolevels=1000      " use many muchos levels of undo
 
 set updatetime=250  "this is for the vl-hl plugin
 let g:hlvarhl="ctermbg=blue ctermfg=yellow guifg=#ffff00 guibg=#0000ff gui=bold"
+
+if has('gui_running')
+    set guifont=DejaVu\ Sans\ Mono\ 10
+endif
