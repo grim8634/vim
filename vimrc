@@ -11,6 +11,8 @@ nmap g/ :vimgrep /<C-R>//j %<CR>\|:cw<CR>:nohl<CR>
 syntax on
 filetype plugin on
 
+colorscheme blackdust
+
 au BufWinEnter * let w:m2=matchadd('DiffDelete', '\s\+$', -1)
 au BufWinEnter * let w:m3=matchadd('ErrorMsg', 'HACK')
 
@@ -45,5 +47,3 @@ let g:hlvarhl="ctermbg=blue ctermfg=yellow guifg=#ffff00 guibg=#0000ff gui=bold"
 if has('gui_running')
     set guifont=Monospace\ 10
 endif
-
-colorscheme blackdust

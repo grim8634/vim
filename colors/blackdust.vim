@@ -31,12 +31,12 @@ hi Include         guifg=#ffcfaf gui=bold
 hi IncSearch       guifg=#000000 guibg=#c15c66
 hi Keyword         guifg=#ffffff gui=bold
 hi Label           guifg=#8fffff gui=underline
-hi LineNr          guifg=#ffff01 guibg=#464646
+hi LineNr          guifg=#ffff01 guibg=#222222
 hi Macro           guifg=#ffcfaf gui=bold
 hi ModeMsg         guifg=#dca3a3 gui=bold
 hi MoreMsg         guifg=#ffffff gui=bold
 hi NonText         guifg=#1f1f1f
-hi Normal          guifg=#ffffff guibg=#333333
+hi Normal          guifg=#ffffff guibg=#222222
 hi Number          guifg=#aca0a3
 hi Operator        guifg=#ffffff
 hi PreCondit       guifg=#dfaf8f gui=bold
@@ -60,7 +60,7 @@ hi Todo            guifg=#ffffff guibg=#000000 gui=bold
 hi Typedef         guifg=#ffffff gui=bold,underline
 hi Type            guifg=#ffffff gui=bold
 hi VertSplit       guifg=#333333 guibg=#cccccc
-hi Visual          guifg=#333333 guibg=#f18c96 gui=reverse
-hi VisualNOS       guifg=#333333 guibg=#f18c96 gui=bold,underline
+hi Visual          guifg=#ffffff guibg=#000000 gui=reverse
+hi VisualNOS       guifg=#ffffff guibg=#000000 gui=bold,underline
 hi WarningMsg      guifg=#ffffff guibg=#333333 gui=bold
 hi WildMenu        guifg=#000000 guibg=#dca3a3
