@@ -10,3 +10,5 @@ syn region POD start=/^=head[123]/ end=/^=cut/ fold
 
 syntax match Tab /\t/
 hi Tab gui=underline guifg=blue ctermbg=blue
+
+map! <F5> use Data::Dumper::Concise;<CR>warn Dumper( 
