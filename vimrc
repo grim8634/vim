@@ -27,7 +27,7 @@ set title           "show file in term title
 
 set smartindent     "better indenting
 set autoindent
-set copyindent
+"set copyindent
 
 set showmatch       "parenthisis
 
