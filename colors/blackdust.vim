@@ -18,7 +18,7 @@ hi DiffAdd         guibg=#613c46
 hi DiffChange      guibg=#333333
 hi DiffDelete      guifg=#333333 guibg=#464646 gui=none
 hi DiffText        guifg=#ffffff guibg=#1f1f1f gui=bold
-hi Directory       guifg=#ffffff gui=bold
+hi Directory       guifg=#00ffff
 hi Error           guifg=#000000 guibg=#00ffff
 hi ErrorMsg        guifg=#000000 guibg=#00c0cf
 hi Exception       guifg=#8fffff gui=underline
@@ -26,17 +26,17 @@ hi Float           guifg=#9c93b3
 hi FoldColumn      guifg=#dca3a3 guibg=#464646
 hi Folded          guifg=#dca3a3 guibg=#333333
 hi Function        guifg=#ffff8f
-hi Identifier      guifg=#ffffff
+hi Identifier      guifg=#81df7d
 hi Include         guifg=#ffcfaf gui=bold
 hi IncSearch       guifg=#000000 guibg=#c15c66
 hi Keyword         guifg=#ffffff gui=bold
 hi Label           guifg=#8fffff gui=underline
-hi LineNr          guifg=#7f7f7f guibg=#464646
+hi LineNr          guifg=#ffff01 guibg=#464646
 hi Macro           guifg=#ffcfaf gui=bold
 hi ModeMsg         guifg=#dca3a3 gui=bold
 hi MoreMsg         guifg=#ffffff gui=bold
 hi NonText         guifg=#1f1f1f
-hi Normal          guifg=#cccccc guibg=#3f3f3f
+hi Normal          guifg=#ffffff guibg=#333333
 hi Number          guifg=#aca0a3
 hi Operator        guifg=#ffffff
 hi PreCondit       guifg=#dfaf8f gui=bold
@@ -48,11 +48,11 @@ hi SpecialChar     guifg=#dca3a3 gui=bold
 hi SpecialComment  guifg=#dca3a3 gui=bold
 hi Special         guifg=#7f7f7f
 hi SpecialKey      guifg=#7e7e7e
-hi Statement       guifg=#8fffff
+hi Statement       guifg=#f0e27c
 hi StatusLine      guifg=#333333 guibg=#f18c96
 hi StatusLineNC    guifg=#333333 guibg=#cccccc
 hi StorageClass    guifg=#ffffff gui=bold
-hi String          guifg=lightgreen
+hi String          guifg=#d09083
 hi Structure       guifg=#ffffff gui=bold,underline
 hi Tag             guifg=#dca3a3 gui=bold
 hi Title           guifg=#ffffff guibg=#333333 gui=bold
