@@ -9,6 +9,9 @@ if exists("b:current_syntax")
     finish
 endif
 
+runtime! syntax/javascript.vim
+unlet b:current_syntax
+
 runtime! syntax/html.vim
 unlet b:current_syntax
 
