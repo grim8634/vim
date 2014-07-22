@@ -1,5 +1,8 @@
 set nocompatible    "disable vi mode, has to come first
 
+call pathogen#infect()
+call pathogen#helptags()
+
 "enable many things like 4 space tabs etc
 set ss=4 ts=4 sts=4 sw=4 expandtab
 
