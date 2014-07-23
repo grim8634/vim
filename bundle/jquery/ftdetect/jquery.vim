@@ -1,1 +1,1 @@
-au BufRead,BufNewFile jquery.*.js set ft=javascript syntax=jquery
+au BufRead,BufNewFile *.js set ft=jquery
