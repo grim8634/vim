@@ -38,7 +38,7 @@ hi MoreMsg         guifg=#ffffff gui=bold
 hi NonText         guifg=#1f1f1f
 hi Normal          guifg=#ffffff guibg=#222222
 hi Number          guifg=#aca0a3
-hi Operator        guifg=#ffffff
+hi Operator        guifg=#fbf4c7
 hi PreCondit       guifg=#dfaf8f gui=bold
 hi PreProc         guifg=#ffcfaf gui=bold
 hi Question        guifg=#ffffff gui=bold
