@@ -14,8 +14,6 @@ nmap g/ :vimgrep /<C-R>//j %<CR>\|:cw<CR>:nohl<CR>
 syntax on
 filetype plugin on
 
-colorscheme blackdust
-
 au BufWinEnter * let w:m2=matchadd('DiffDelete', '\s\+$', -1)
 au BufWinEnter * let w:m3=matchadd('ErrorMsg', 'HACK')
 
@@ -52,3 +50,6 @@ if has('gui_running')
 endif
 
 let g:sql_type_default = 'mysql'
+
+set background=dark
+colorscheme solarized
