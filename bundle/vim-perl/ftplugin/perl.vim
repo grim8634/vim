@@ -6,9 +6,4 @@ let perl_include_pod = 1
 
 syn region POD start=/^=head[123]/ end=/^=cut/ fold
 
-"hi Constant   cterm=NONE ctermfg=DarkGreen   gui=NONE guifg=green3
-
-syntax match Tab /\t/
-hi Tab gui=underline guifg=blue ctermbg=blue
-
 map! <F5> use Data::Dumper::Concise;<CR>warn Dumper( 
