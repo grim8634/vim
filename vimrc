@@ -16,7 +16,13 @@ filetype plugin on
 
 au BufWinEnter * let w:m3=matchadd('ErrorMsg', 'HACK')
 
-:map <F4> :setlocal spell! spelllang=en_gb<CR> :if exists("g:syntax_on") <Bar> syntax off <Bar> else <Bar> syntax enable <Bar> endif<CR><CR>
+:map <F4> :if exists("g:syntax_on") <Bar>
+        \ syntax off <Bar>
+        \ set spell spelllang=en_gb <Bar>
+    \ else <Bar>
+        \ syntax enable <Bar>
+        \ set nospell <Bar>
+    \ endif <CR>
 
 filetype indent on
 
@@ -29,6 +35,7 @@ set autoindent
 "set copyindent
 
 set showmatch       "parenthisis
+set cmdheight=2
 
 set ignorecase      "case insensitve search
 set smartcase       "unless there's uppercase
