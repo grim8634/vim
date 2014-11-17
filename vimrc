@@ -55,7 +55,7 @@ let g:sql_type_default = 'mysql'
 set background=dark
 set t_Co=256
 let g:solarized_hitrail = 1
-let g:solarized_termcolors=256
+"let g:solarized_termcolors=256
 
 autocmd ColorScheme * highlight Tab gui=underline guifg=blue ctermbg=blue
 hi Tab gui=underline guifg=blue ctermbg=blue
