@@ -8,6 +8,8 @@ set ss=4 ts=4 sts=4 sw=4 expandtab
 
 "<F2>close
 map <F2> :q<Enter>
+
+map <F6> :set number!<CR>
 set pastetoggle=<F3>
 nmap g/ :vimgrep /<C-R>//j %<CR>\|:cw<CR>:nohl<CR>
 
