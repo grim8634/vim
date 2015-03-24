@@ -4,7 +4,7 @@ call pathogen#infect()
 call pathogen#helptags()
 
 "enable many things like 4 space tabs etc
-set ss=4 ts=4 sts=4 sw=4 expandtab
+set ss=4 ts=4 sts=4 sw=4 expandtab hidden
 
 "map <F2> :bd<Enter>
 map <F1> :NERDTreeToggle<Enter>
