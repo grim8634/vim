@@ -11,7 +11,15 @@ map <F1> :NERDTreeToggle<Enter>
 
 map <F6> :set number!<CR>
 set pastetoggle=<F3>
-nmap g/ :vimgrep /<C-R>//j %<CR>\|:cw<CR>:nohl<CR>
+
+set wildchar=<Tab> wildmenu wildmode=full
+set wildcharm=<C-Z>
+nnoremap <F10> :b <C-Z>
+
+nnoremap <silent> <F11> :ToggleBufExplorer<CR>
+
+nnoremap <silent> <F12> :bn<CR>
+nnoremap <silent> <S-F12> :bp<CR>
 
 syntax on
 filetype plugin on
