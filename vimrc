@@ -4,14 +4,22 @@ call pathogen#infect()
 call pathogen#helptags()
 
 "enable many things like 4 space tabs etc
-set ss=4 ts=4 sts=4 sw=4 expandtab
+set ss=4 ts=4 sts=4 sw=4 expandtab hidden
 
-"<F2>close
-map <F2> :q<Enter>
+"map <F2> :bd<Enter>
+map <F1> :NERDTreeToggle<Enter>
 
 map <F6> :set number!<CR>
 set pastetoggle=<F3>
-nmap g/ :vimgrep /<C-R>//j %<CR>\|:cw<CR>:nohl<CR>
+
+set wildchar=<Tab> wildmenu wildmode=full
+set wildcharm=<C-Z>
+nnoremap <F10> :b <C-Z>
+
+nnoremap <silent> <F11> :ToggleBufExplorer<CR>
+
+nnoremap <silent> <F12> :bn<CR>
+nnoremap <silent> <S-F12> :bp<CR>
 
 syntax on
 filetype plugin on
