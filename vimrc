@@ -66,3 +66,5 @@ hi Tab gui=underline guifg=blue ctermbg=blue
 match Tab /\t/
 
 colorscheme solarized
+
+let g:vim_json_syntax_conceal = 0
