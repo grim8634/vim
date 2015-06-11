@@ -68,3 +68,5 @@ match Tab /\t/
 colorscheme solarized
 
 let g:vim_json_syntax_conceal = 0
+
+set encoding=utf-8
