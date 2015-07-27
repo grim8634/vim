@@ -70,3 +70,5 @@ colorscheme solarized
 let g:vim_json_syntax_conceal = 0
 
 set encoding=utf-8
+
+let g:bufExplorerSortBy='number'
