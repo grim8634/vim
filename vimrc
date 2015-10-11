@@ -54,7 +54,7 @@ set undolevels=1000      " use many muchos levels of undo
 set updatetime=250  "this is for the vl-hl plugin
 let g:hlvarhl="ctermbg=blue ctermfg=yellow guifg=#ffff00 guibg=#0000ff gui=bold"
 
-let g:sql_type_default = 'mysql'
+let g:sql_type_default = 'postgresql'
 
 set background=dark
 set t_Co=256
@@ -72,3 +72,7 @@ let g:vim_json_syntax_conceal = 0
 set encoding=utf-8
 
 let g:bufExplorerSortBy='number'
+
+set backupdir=~/.vim/backup//
+set directory=~/.vim/swap//
+set undodir=~/.vim/undo//
