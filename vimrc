@@ -14,12 +14,9 @@ set pastetoggle=<F3>
 
 set wildchar=<Tab> wildmenu wildmode=full
 set wildcharm=<C-Z>
-nnoremap <F10> :b <C-Z>
 
 nnoremap <silent> <F11> :ToggleBufExplorer<CR>
-
-nnoremap <silent> <F12> :bn<CR>
-nnoremap <silent> <S-F12> :bp<CR>
+nnoremap <silent> <F12> :b#<CR>
 
 syntax on
 filetype plugin on
