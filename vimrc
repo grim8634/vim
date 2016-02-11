@@ -5,6 +5,7 @@ source ~/.vim/plugins/load-plugins.vim
 map <F1> :NERDTreeToggle<Enter>
 
 map <F6> :set number!<CR>
+map <F7> :set invnumber<CR> :NERDTreeToggle<CR>
 set pastetoggle=<F3>
 
 nnoremap <silent> <F11> :ToggleBufExplorer<CR>
