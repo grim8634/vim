@@ -1,1 +1,1 @@
-set ss=2 ts=2 sts=2 sw=2 expandtab hidden
+setlocal ss=2 ts=2 sts=2 sw=2 expandtab hidden
