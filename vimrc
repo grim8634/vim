@@ -1,7 +1,6 @@
 set nocompatible    "disable vi mode, has to come first
 
-call pathogen#infect()
-call pathogen#helptags()
+source ~/.vim/plugins/load-plugins.vim
 
 "enable many things like 4 space tabs etc
 set ss=4 ts=4 sts=4 sw=4 expandtab hidden
@@ -27,8 +26,6 @@ au BufWinEnter * let w:m3=matchadd('ErrorMsg', 'HACK')
 
 filetype indent on
 
-set guioptions-=T   "no toolbar
-set guioptions-=r   "no scroll bar
 set title           "show file in term title
 
 set smartindent     "better indenting
