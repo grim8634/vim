@@ -10,7 +10,7 @@ call plug#begin('~/.vim/plugins/vim-plug')
     Plug 'tpope/vim-surround'
     Plug 'pjcj/vim-hl-var'
     Plug 'rust-lang/rust.vim', {'for': 'rust'}
-    Plug 'rodjek/vim-puppet', {'for': 'toml'}
+    Plug 'rodjek/vim-puppet', {'for': 'puppet'}
     Plug 'cespare/vim-toml', {'for': 'toml'}
     Plug 'vim-perl/vim-perl', {'for': 'perl'}
     Plug '~/.vim/plugins/mark-perl', {'for': 'perl'}
