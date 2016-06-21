@@ -1,1 +1,1 @@
-../../../../vim-perl/contrib/moose.vim
+../../../../vim-plug/vim-perl/contrib/moose.vim
