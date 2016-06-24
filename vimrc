@@ -62,7 +62,6 @@ let g:hlvarhl="ctermbg=blue ctermfg=yellow guifg=#ffff00 guibg=#0000ff gui=bold"
 let g:sql_type_default = 'postgresql'
 
 let g:solarized_hitrail = 1
-let g:solarized_termcolors=256
 
 autocmd ColorScheme * highlight Tab gui=underline guifg=blue ctermbg=blue
 hi Tab gui=underline guifg=blue ctermbg=blue
