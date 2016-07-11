@@ -18,7 +18,6 @@ au BufWinEnter * let w:m3=matchadd('ErrorMsg', 'HACK')
 :map <F4> :setlocal spell! spelllang=en_gb<CR>
 
 filetype indent on
-colorscheme solarized
 
 set encoding=utf-8
 
@@ -53,14 +52,9 @@ set undolevels=1000 " use many muchos levels of undo
 set updatetime=250  "this is for the vl-hl plugin
 set backspace=2     "normal backspace
 
-set background=dark
-set t_Co=256
-
 let g:hlvarhl="ctermbg=blue ctermfg=yellow guifg=#ffff00 guibg=#0000ff gui=bold"
 
 let g:sql_type_default = 'postgresql'
-
-let g:solarized_hitrail = 1
 
 autocmd ColorScheme * highlight Tab gui=underline guifg=blue ctermbg=blue
 hi Tab gui=underline guifg=blue ctermbg=blue
@@ -69,3 +63,8 @@ match Tab /\t/
 let g:vim_json_syntax_conceal = 0
 
 let g:bufExplorerSortBy='number'
+
+set background=dark
+set t_Co=256
+let g:solarized_hitrail=1
+colorscheme solarized
