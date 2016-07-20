@@ -63,7 +63,6 @@ match Tab /\t/
 let g:vim_json_syntax_conceal = 0
 
 let g:bufExplorerSortBy='number'
-let g:rainbow_active=1 
 
 set background=dark
 set t_Co=256

@@ -11,7 +11,6 @@ call plug#begin('~/.vim/plugins/vim-plug')
     Plug 'tpope/vim-repeat'
     Plug 'tpope/vim-surround'
     Plug 'pjcj/vim-hl-var'
-    Plug 'luochen1990/rainbow'
     Plug 'rust-lang/rust.vim', {'for': 'rust'}
     Plug 'rodjek/vim-puppet', {'for': 'puppet'}
     Plug 'cespare/vim-toml', {'for': 'toml'}
